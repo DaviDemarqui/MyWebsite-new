@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.Header {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(50%) blur(2px);
+          backdrop-filter: saturate(50%) blur(2px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hdr-logo {
+  font-size: 19px;
+  color: white;
+  margin-right: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.menu-ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: auto;
+}
+
+.menu-ul ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-ul li {
+  display: inline;
+  margin: 10px;
+}
+
+.menu-ul a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: #c7c7c7;
+}
+
+.menu-ul a:hover {
+  color: white;
+}
+
+.container-01 {
+  text-align: center;
+  margin-top: 1em;
+  padding: 20em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-01 .hello-C1 {
+  color: #ff4444;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.container-01 h3 {
+  margin: 0;
+}
+
+.container-01 h1 {
+  margin: 0;
+  font-size: 3.6em;
+}
+
+.container-01 .abt-me-btn {
+  padding-top: .8em;
+  padding-bottom: .8em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-radius: 100px;
+  background-color: royalblue;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 1em;
+  font-size: 16px;
+}
+
+.container-01 .abt-me-btn:hover {
+  background-color: #517bf8;
+}
+
+.container-01 .ctc-btn {
+  padding-top: .8em;
+  padding-bottom: .8em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-radius: 100px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 1em;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.container-01 .ctc-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.abt-me-container {
+  text-align: center;
+  background-color: white;
+  padding-top: 5em;
+  padding-bottom: 10em;
+  font-size: 26px;
+  display: block;
+}
+
+.abt-me-container h2 {
+  margin: 0em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  color: #272727;
+}
+
+.abt-me-container p {
+  text-align: right;
+  float: right;
+  width: 50%;
+  margin-right: 5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  line-height: 1.9em;
+}
+
+.abt-me-container .myProfilePic {
+  margin-top: 4em;
+  width: 300px;
+  height: 300px;
+}
+
+.main-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.main-footer .m-footer {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.main-footer .m-footer li {
+  margin: 1em;
+}
+
+.main-footer .m-footer a {
+  color: white;
+  font-size: 26px;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .Header { 
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(50%) blur(2px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .hdr-logo {
+    font-size: 19px;
+    color: white;
+    margin-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .menu-ul {
+    align-items: center;
+    text-align: center;
+    padding: auto;
+
+    ul{
+      display: flex;
+      list-style: none;
+      margin: 0;
+      align-items: center;
+    }
+
+    li {
+      display: inline;
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: -apple-system,
+      BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 200;
+      font-size: 14px;
+      color: rgb(199, 199, 199);
+    } a:hover { color: white; }
+
+  }
+
+  .container-01 {
+    text-align: center;
+    margin-top: 1em;
+    padding: 20em;
+    font-family: -apple-system,
+      BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .hello-C1 {
+      color: rgb(255, 68, 68);
+      font-size: 25px;
+      margin-bottom: 0;
+    } h3 { margin: 0; }
+
+    h1 {
+      margin: 0;
+      font-size: 3.6em;
+    }
+
+    .abt-me-btn {
+      padding-top: .8em;
+      padding-bottom: .8em;
+      padding-left: 3em;
+      padding-right: 3em;
+      border-radius: 100px;
+      background-color: royalblue;
+      color: white;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: 0.2s;
+      margin: 1em;
+      font-size: 16px;
+      &:hover {
+        background-color: rgb(81, 123, 248);
+      }
+    }
+
+    .ctc-btn {
+      padding-top: .8em;
+      padding-bottom: .8em;
+      padding-left: 3em;
+      padding-right: 3em;
+      border-radius: 100px;
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      cursor: pointer;
+      transition: 0.2s;
+      margin: 1em;
+      font-size: 16px;
+      transition: 0.2s;
+      &:hover {
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+      }
+    }
+
+  }
+
+  .abt-me-container {
+    text-align: center;
+    background-color: white;
+    padding-top: 5em;
+    padding-bottom: 10em;
+    font-size: 26px;
+    display: block;
+    
+    h2 {
+      margin: 0em;
+      font-family: -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 30px;
+      color: rgb(39, 39, 39);
+    }
+
+    p {
+      text-align: right;
+      float: right;
+      width: 50%;
+      margin-right: 5em;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      line-height: 1.9em;
+    }
+
+    .myProfilePic {
+      margin-top: 4em;
+      width: 300px;
+      height: 300px;
+    }
+
+  }
+
+  .main-footer {
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    padding-bottom: 5em;
+
+    .m-footer {
+      list-style: none;
+      display: flex;
+      margin: 0;
+
+      li {
+        margin: 1em;
+      }
+
+      a {
+        color: white;
+        font-size: 26px;
+      }
+    }
+  }
