@@ -8,6 +8,7 @@ function MainFooter() {
                 <li><a href="?"><FontAwesomeIcon icon={['fab', 'facebook-square']} /></a></li>
                 <li><a href="?"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
                 <li><a href="?"><FontAwesomeIcon icon={['fab', 'github-square']} /></a></li>
+                <p>DaviDemarqui 2022</p>
             </ul>
         </div>
     )

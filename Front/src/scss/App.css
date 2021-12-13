@@ -1,12 +1,20 @@
-body {
+* {
   margin: 0;
+}
+
+:root {
+  --primary: #F2AA4CFF;
+  --text: #101820FF;
+}
+
+body {
   background-color: #f2f2f2;
 }
 
 .Header {
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-backdrop-filter: saturate(50%) blur(2px);
-          backdrop-filter: saturate(50%) blur(2px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,6 +27,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hdr-logo:hover {
+  color: var(--primary);
 }
 
 .menu-ul {
@@ -60,23 +74,48 @@ body {
 .container-01 {
   text-align: center;
   margin-top: 1em;
-  padding: 20em;
+  padding: 23em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container-01 .hello-C1 {
-  color: #ff4444;
+  color: var(--text);
   font-size: 25px;
+  font-family: monospace;
   margin-bottom: 0;
+  cursor: default;
+  color: var(--primary);
+}
+
+.container-01 .hello-C1 span {
+  -webkit-animation: blinker .8s linear infinite;
+          animation: blinker .8s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  1% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  1% {
+    opacity: 0;
+  }
 }
 
 .container-01 h3 {
   margin: 0;
 }
 
+.container-01 h3 span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container-01 h1 {
   margin: 0;
   font-size: 3.6em;
+  color: var(--text);
 }
 
 .container-01 .abt-me-btn {
@@ -85,7 +124,7 @@ body {
   padding-left: 3em;
   padding-right: 3em;
   border-radius: 100px;
-  background-color: royalblue;
+  background-color: var(--primary);
   color: white;
   border: 1px solid transparent;
   cursor: pointer;
@@ -96,7 +135,7 @@ body {
 }
 
 .container-01 .abt-me-btn:hover {
-  background-color: #517bf8;
+  background-color: #b33d3d;
 }
 
 .container-01 .ctc-btn {
@@ -124,48 +163,63 @@ body {
 
 .abt-me-container {
   text-align: center;
-  background-color: white;
+  background-color: black;
   padding-top: 5em;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   font-size: 26px;
   display: block;
+  color: white;
 }
 
 .abt-me-container h2 {
   margin: 0em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 30px;
-  color: #272727;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
 }
 
 .abt-me-container p {
-  text-align: right;
-  float: right;
-  width: 50%;
-  margin-right: 5em;
-  margin-top: 3em;
-  margin-bottom: 1em;
-  line-height: 1.9em;
+  text-align: center;
+  line-height: 1em;
+  margin-left: 15em;
+  margin-right: 15em;
 }
 
-.abt-me-container .myProfilePic {
-  margin-top: 4em;
-  width: 300px;
-  height: 300px;
+.abt-me-container .kn-list {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+.abt-me-container .kn-list p {
+  margin: 1em;
 }
 
 .main-footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.801);
   text-align: center;
-  padding-bottom: 5em;
+  padding-bottom: .1em;
+}
+
+.main-footer p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  float: right;
+  margin: 0;
 }
 
 .main-footer .m-footer {
   list-style: none;
+  text-align: center;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+}
+
+.main-footer .m-footer p {
+  margin: 2em;
+  cursor: default;
 }
 
 .main-footer .m-footer li {
@@ -175,5 +229,11 @@ body {
 .main-footer .m-footer a {
   color: white;
   font-size: 26px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-footer .m-footer a:hover {
+  color: var(--primary);
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,9 +5,9 @@ function Header() {
             <div className="menu-ul">
                 <ul>
                     <li><h1 className="hdr-logo">Demarqui.</h1></li>
-                    <li><a href="?">My-Projects</a></li>
+                    <li><a href="?">Software</a></li>
                     <li><a href="?">Contact</a></li>
-                    <li><a href="?">About-me</a></li>
+                    <li><a href="?">About Me</a></li>
                 </ul>
             </div>  
         </div>
