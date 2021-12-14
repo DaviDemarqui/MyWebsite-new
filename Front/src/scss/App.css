@@ -110,55 +110,13 @@ body {
 
 .container-01 h3 span {
   font-family: Arial, Helvetica, sans-serif;
+  z-index: auto;
 }
 
 .container-01 h1 {
   margin: 0;
   font-size: 3.6em;
   color: var(--text);
-}
-
-.container-01 .abt-me-btn {
-  padding-top: .8em;
-  padding-bottom: .8em;
-  padding-left: 3em;
-  padding-right: 3em;
-  border-radius: 100px;
-  background-color: var(--primary);
-  color: white;
-  border: 1px solid transparent;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  margin: 1em;
-  font-size: 16px;
-}
-
-.container-01 .abt-me-btn:hover {
-  background-color: #b33d3d;
-}
-
-.container-01 .ctc-btn {
-  padding-top: .8em;
-  padding-bottom: .8em;
-  padding-left: 3em;
-  padding-right: 3em;
-  border-radius: 100px;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  margin: 1em;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.container-01 .ctc-btn:hover {
-  background-color: black;
-  border: 1px solid black;
-  color: white;
 }
 
 .abt-me-container {
@@ -240,7 +198,7 @@ body {
 }
 
 .main-footer .m-footer .facebook-icon:hover {
-  color: #37afff;
+  color: #cecece;
 }
 
 .main-footer .m-footer .linkedin-icon {
@@ -248,7 +206,7 @@ body {
 }
 
 .main-footer .m-footer .linkedin-icon:hover {
-  color: #2f4fff;
+  color: #cecece;
 }
 
 .main-footer .m-footer .github-icon {
@@ -256,6 +214,6 @@ body {
 }
 
 .main-footer .m-footer .github-icon:hover {
-  color: #6aeb6a;
+  color: #cecece;
 }
 /*# sourceMappingURL=App.css.map */

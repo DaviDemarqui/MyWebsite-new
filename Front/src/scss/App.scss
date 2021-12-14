@@ -77,51 +77,13 @@ body { background-color: #f2f2f2; }
       @keyframes blinker { 1% { opacity: 0; } }
     } h3 { 
       margin: 0;
-      span { font-family: Arial, Helvetica, sans-serif; } 
+      span { font-family: Arial, Helvetica, sans-serif; z-index: auto; } 
     } h1 {
       margin: 0;
       font-size: 3.6em;
       color: var(--text);
     }
-
-    .abt-me-btn {
-      padding-top: .8em;
-      padding-bottom: .8em;
-      padding-left: 3em;
-      padding-right: 3em;
-      border-radius: 100px;
-      background-color: var(--primary);
-      color: white;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: 0.2s;
-      margin: 1em;
-      font-size: 16px;
-      &:hover { background-color: rgb(179, 61, 61); }
-    }
-
-    .ctc-btn {
-      padding-top: .8em;
-      padding-bottom: .8em;
-      padding-left: 3em;
-      padding-right: 3em;
-      border-radius: 100px;
-      background-color: transparent;
-      color: black;
-      border: 1px solid black;
-      cursor: pointer;
-      transition: 0.2s;
-      margin: 1em;
-      font-size: 16px;
-      transition: 0.2s;
-      &:hover {
-        background-color: black;
-        border: 1px solid black;
-        color: white;
-      }
-    }
   }
-
   .abt-me-container {
     text-align: center;
     background-color: black;
@@ -186,21 +148,15 @@ body { background-color: #f2f2f2; }
       }
       .facebook-icon {
         color: white;
-        &:hover {
-          color: rgb(55, 175, 255);
-        }
+        &:hover { color: #cecece; }
       }
       .linkedin-icon {
         color: white;
-        &:hover {
-          color: rgb(47, 79, 255);
-        }
+        &:hover { color: #cecece; }
       }
       .github-icon {
         color: white;
-        &:hover {
-          color: rgb(106, 235, 106);
-        }
+        &:hover { color: #cecece; }
       }
     }
   }
