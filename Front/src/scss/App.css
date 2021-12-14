@@ -4,15 +4,15 @@
 
 :root {
   --primary: #F2AA4CFF;
-  --text: #101820FF;
+  --text: rgb(51, 51, 51);
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #e2e2e2;
 }
 
 .Header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1c252e;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   position: fixed;
@@ -32,7 +32,7 @@ body {
 }
 
 .hdr-logo:hover {
-  color: var(--primary);
+  color: #4bb99a;
 }
 
 .menu-ul {
@@ -84,7 +84,7 @@ body {
   font-family: monospace;
   margin-bottom: 0;
   cursor: default;
-  color: var(--primary);
+  color: #4bb99a;
 }
 
 .container-01 .hello-C1 span {
@@ -106,6 +106,7 @@ body {
 
 .container-01 h3 {
   margin: 0;
+  color: var(--text);
 }
 
 .container-01 h3 span {
@@ -121,7 +122,7 @@ body {
 
 .abt-me-container {
   text-align: center;
-  background-color: black;
+  background-color: #1c252e;
   padding-top: 5em;
   padding-bottom: 5em;
   font-size: 26px;
@@ -158,7 +159,7 @@ body {
 }
 
 .main-footer {
-  background: rgba(0, 0, 0, 0.801);
+  background: #1c252e;
   text-align: center;
   padding-bottom: .1em;
 }
@@ -198,7 +199,7 @@ body {
 }
 
 .main-footer .m-footer .facebook-icon:hover {
-  color: #cecece;
+  color: #018687;
 }
 
 .main-footer .m-footer .linkedin-icon {
@@ -206,7 +207,7 @@ body {
 }
 
 .main-footer .m-footer .linkedin-icon:hover {
-  color: #cecece;
+  color: #018687;
 }
 
 .main-footer .m-footer .github-icon {
@@ -214,6 +215,6 @@ body {
 }
 
 .main-footer .m-footer .github-icon:hover {
-  color: #cecece;
+  color: #018687;
 }
 /*# sourceMappingURL=App.css.map */
