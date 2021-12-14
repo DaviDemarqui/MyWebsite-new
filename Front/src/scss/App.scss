@@ -148,6 +148,7 @@ body { background-color: #f2f2f2; }
       font-size: 20px;
       text-align: center;
       display: block;
+      h3{ font-size: 34px; margin-top: 1.5em;}
       p{ margin: 1em; }
     }
   }
@@ -176,13 +177,30 @@ body { background-color: #f2f2f2; }
       p {
         margin: 2em;
         cursor: default;
-      } li {
+      } 
+      li {
         margin: 1em;
-      } a {
+      } 
+      a {
+        font-size: 27px;
+      }
+      .facebook-icon {
         color: white;
-        font-size: 26px;
-        transition: 0.5s;
-        &:hover { color: var(--primary);}
+        &:hover {
+          color: rgb(55, 175, 255);
+        }
+      }
+      .linkedin-icon {
+        color: white;
+        &:hover {
+          color: rgb(47, 79, 255);
+        }
+      }
+      .github-icon {
+        color: white;
+        &:hover {
+          color: rgb(106, 235, 106);
+        }
       }
     }
   }

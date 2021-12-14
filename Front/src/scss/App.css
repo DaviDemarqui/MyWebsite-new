@@ -190,6 +190,11 @@ body {
   display: block;
 }
 
+.abt-me-container .kn-list h3 {
+  font-size: 34px;
+  margin-top: 1.5em;
+}
+
 .abt-me-container .kn-list p {
   margin: 1em;
 }
@@ -227,13 +232,30 @@ body {
 }
 
 .main-footer .m-footer a {
-  color: white;
-  font-size: 26px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  font-size: 27px;
 }
 
-.main-footer .m-footer a:hover {
-  color: var(--primary);
+.main-footer .m-footer .facebook-icon {
+  color: white;
+}
+
+.main-footer .m-footer .facebook-icon:hover {
+  color: #37afff;
+}
+
+.main-footer .m-footer .linkedin-icon {
+  color: white;
+}
+
+.main-footer .m-footer .linkedin-icon:hover {
+  color: #2f4fff;
+}
+
+.main-footer .m-footer .github-icon {
+  color: white;
+}
+
+.main-footer .m-footer .github-icon:hover {
+  color: #6aeb6a;
 }
 /*# sourceMappingURL=App.css.map */
