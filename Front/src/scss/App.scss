@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 * {
   margin: 0;
 }
@@ -5,7 +7,7 @@
   --primary: #F2AA4CFF;
   --text: rgb(51, 51, 51);
 }
-body { background-color: #e2e2e2; }
+body { background-color: #eeeeee; }
   
   .Header { 
     background-color: #1c252e;
@@ -116,8 +118,68 @@ body { background-color: #e2e2e2; }
     }
   }
 
+  .MyPojects {
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 3em;
+    Table {
+      max-width: 90%;
+      margin: auto;
+    }
+    h3 {
+      text-align: center;
+    }
+    .lrn {
+      margin-top: 5em;
+      margin-bottom: 5em;
+      margin-left: 4.9em;
+      background-color: #0f1318;
+      padding: 1em;
+      border-radius: 20px;
+      color: rgb(81, 211, 81);
+      width: 30%;
+      h4{ font-size: 30px; margin: 1em; }
+      span { animation: blinker .8s linear infinite; } 
+      @keyframes blinker { 1% { opacity: 0; } }
+      ul { margin-left: 2em; }
+      .btn{
+        padding: 0;
+        float: left;
+        margin: 0;
+        ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 5px;
+          }
+        }
+        .close {
+          background-color: rgb(243, 57, 57);
+          width: 13px;
+          height: 13px;
+          border-radius: 10px;
+        }
+        .minimize {
+          background-color: rgb(255, 213, 23);
+          width: 13px;
+          height: 13px;
+          border-radius: 10px;
+        }
+        .expand {
+          background-color: rgb(57, 207, 57);
+          width: 13px;
+          height: 13px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
   .main-footer {
-    background: #1c252e;
+    background: #1e2022;
     text-align: center;
     padding-bottom: .1em;
     p {
@@ -149,15 +211,15 @@ body { background-color: #e2e2e2; }
       }
       .facebook-icon {
         color: white;
-        &:hover { color: #018687; }
+        &:hover { color: #03ecec; }
       }
       .linkedin-icon {
         color: white;
-        &:hover { color: #018687; }
+        &:hover { color: #03ecec; }
       }
       .github-icon {
         color: white;
-        &:hover { color: #018687; }
+        &:hover { color: #03ecec; }
       }
     }
   }
