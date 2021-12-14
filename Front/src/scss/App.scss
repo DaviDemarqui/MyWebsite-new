@@ -10,9 +10,9 @@
 body { background-color: #eeeeee; }
   
   .Header { 
-    background-color: #1c252e;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    background: rgba(28, 37, 46, 0.78);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,7 +26,7 @@ body { background-color: #eeeeee; }
     margin-bottom: 0;
     cursor: pointer;
     transition: 0.5s;
-    &:hover { color: #4bb99a; }
+    &:hover { color: #39ffc7; }
   }
 
   .menu-ul {
@@ -77,14 +77,18 @@ body { background-color: #eeeeee; }
       color: #4bb99a;
       span{ animation: blinker .8s linear infinite; } 
       @keyframes blinker { 1% { opacity: 0; } }
-    } h3 { 
+    } h3 {
+      font-size: 26px; 
       margin: 0;
       color: var(--text);
       span { font-family: Arial, Helvetica, sans-serif; z-index: auto; } 
     } h1 {
+      font-weight: 700;
       margin: 0;
       font-size: 3.6em;
       color: var(--text);
+    } h4 {
+      font-size: 20px;
     }
   }
   .abt-me-container {
@@ -100,13 +104,17 @@ body { background-color: #eeeeee; }
       margin: 0em;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 50px;
+      font-weight: 700;
     }
 
     p {
       text-align: center;
       line-height: 1em;
-      margin-left: 15em;
-      margin-right: 15em;
+      margin-left: 10em;
+      margin-right: 10em;
+      line-height: 1.4em;
+      word-spacing: 7px;
+      font-size: 25px;
     }
 
     .kn-list {
@@ -114,7 +122,11 @@ body { background-color: #eeeeee; }
       text-align: center;
       display: block;
       h3{ font-size: 34px; margin-top: 1.5em;}
-      p{ margin: 1em; }
+      p{ 
+        margin: 1em;
+        line-height: .9em;
+        font-size: 20px; 
+      }
     }
   }
 
@@ -126,6 +138,16 @@ body { background-color: #eeeeee; }
     Table {
       max-width: 90%;
       margin: auto;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        transition: 0.2s;
+        &:hover {
+          color: #f13746;
+          font-weight: 600;
+        }
+      }
     }
     h3 {
       text-align: center;
@@ -138,9 +160,15 @@ body { background-color: #eeeeee; }
       padding: 1em;
       border-radius: 20px;
       color: rgb(81, 211, 81);
-      width: 30%;
-      h4{ font-size: 30px; margin: 1em; }
-      span { animation: blinker .8s linear infinite; } 
+      width: 91%;
+      h4{ 
+        font-size: 27px;
+        font-weight: 900; 
+        margin-left: 1em;
+        margin-top: 1.2em;
+        margin-bottom: .5em; 
+      font-family: monospace;
+    } span { animation: blinker .8s linear infinite; } 
       @keyframes blinker { 1% { opacity: 0; } }
       ul { margin-left: 2em; }
       .btn{
@@ -175,6 +203,14 @@ body { background-color: #eeeeee; }
           border-radius: 10px;
         }
       }
+      .venture-list {
+        display: inline-flex;
+        .l1 {
+          margin-left: 1em;
+          font-size: 20px;
+          word-spacing: 5px;
+        }
+      }
     }
   }
 
@@ -198,28 +234,25 @@ body { background-color: #eeeeee; }
       // margin-bottom: 0;
       text-align: center;
       margin: auto;
-      display: flex;
+      display: inline-flex;
       p {
         margin: 2em;
         cursor: default;
+        font-weight: 500;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
       } 
       li {
         margin: 1em;
       } 
       a {
         font-size: 27px;
-      }
-      .facebook-icon {
         color: white;
-        &:hover { color: #03ecec; }
-      }
-      .linkedin-icon {
-        color: white;
-        &:hover { color: #03ecec; }
-      }
-      .github-icon {
-        color: white;
-        &:hover { color: #03ecec; }
+        transition: 0.2s;
+        &:hover{
+          color: #4bb99a;
+        }
       }
     }
   }

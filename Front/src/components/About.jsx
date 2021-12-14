@@ -7,6 +7,8 @@ function About() {
             <br />
             <p>I never was the best student in my time in school, Im just a curious guy who want to enter in new adventures
                 and evolve my knowledge more and more every day!
+                I started coding when i was 14 years old and since them im studying and working hard to increase my knowledge and skills.
+                My goal is to create, innovate and become a successful Software developer.
             </p>
             <br />
             <div className="kn-list">
