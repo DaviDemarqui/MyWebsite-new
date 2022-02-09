@@ -16,7 +16,7 @@ export default class Header extends Component {
                 <Nav.Link><Link to='projects'>Projects</Link></Nav.Link>
                 </Nav>
                 <Nav>
-                <Nav.Link href="contact"><Link to="contact">Contact</Link></Nav.Link>
+                <Nav.Link><Link to="contact">Contact</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Container>
