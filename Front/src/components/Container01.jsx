@@ -9,7 +9,7 @@ function Container01() {
             <br />
             <h3>Self taught software developer from Brazil guided by the desire to evolve and innovate.</h3>
             <br />
-            <h4 className='ddb0'> <span>Front End Developer </span> | <span>Software Developer </span> </h4>
+            <h4 className='ddb0'>Full Stack Software Engineer</h4>
         </div>
     )
 }

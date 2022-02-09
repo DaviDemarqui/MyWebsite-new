@@ -9,60 +9,16 @@
 }
 body { background-color: #eeeeee; }
   
-  .Header { 
-    background: rgba(28, 37, 46, 0.68);
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+.Header { 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
   
-  .hdr-logo {
-    font-size: 19px;
-    color: white;
-    margin-right: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-    cursor: pointer;
-    transition: 0.5s;
-    &:hover { color: var(--primary); }
-  }
-
-  .menu-ul {
-    align-items: center;
-    text-align: center;
-    padding: auto;
-
-    ul{
-      display: flex;
-      list-style: none;
-      margin: 0;
-      align-items: center;
-    }
-
-    li {
-      display: inline;
-      margin: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      font-family: -apple-system,
-      BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
-      font-weight: 200;
-      font-size: 14px;
-      color: rgb(199, 199, 199);
-    } a:hover { color: white; }
-  }
-
   .container-01 {
-    text-align: center;
+    text-align: left;
     margin-top: 1em;
-    padding: 23em;
+    padding: 30vh;
     font-family: -apple-system,
       BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell,
@@ -75,11 +31,11 @@ body { background-color: #eeeeee; }
       font-family: monospace;
       margin-bottom: 0;
       cursor: default;
-      color: var(--primary);
+      color: #0d6efd;
       span{ animation: blinker .8s linear infinite; } 
       @keyframes blinker { 1% { opacity: 0; } }
     } h3 {
-      font-size: 26px; 
+      font-size: 23px; 
       margin: 0;
       color: var(--text);
       span { font-family: Arial, Helvetica, sans-serif; z-index: auto; } 
@@ -94,7 +50,8 @@ body { background-color: #eeeeee; }
   }
   .abt-me-container {
     text-align: center;
-    background-color: #1c252e;
+    // background-color: #212529;
+    background-color: #0f1318;
     padding-top: 5em;
     padding-bottom: 5em;
     font-size: 26px;
@@ -102,7 +59,7 @@ body { background-color: #eeeeee; }
     color: white;
     
     h2 {
-      margin: 0em;
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 50px;
       font-weight: 700;
@@ -110,12 +67,12 @@ body { background-color: #eeeeee; }
 
     p {
       text-align: center;
-      line-height: 1em;
+      line-height: 1.5em;
       margin-left: 10em;
       margin-right: 10em;
-      line-height: 1.4em;
+      line-height: 1.5em;
       word-spacing: 7px;
-      font-size: 25px;
+      font-size: 23px;
     }
 
     .kn-list {
@@ -136,23 +93,23 @@ body { background-color: #eeeeee; }
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 3em;
-    Table {
-      max-width: 90%;
-      margin: auto;
-      a {
-        text-decoration: none;
-        color: black;
-        font-weight: 500;
-        transition: 0.2s;
-        &:hover {
-          color: #f13746;
-          font-weight: 600;
-        }
+
+    h3 {
+       text-align: center;
+    }
+
+    .projects {
+      // display: flex;
+      // position: relative;
+      // left: 17%;
+      // width: 90em;
+      // margin: 1em;
+      margin: 5em 5em 0 5em;
+      .card {
+        margin: 1em;
       }
     }
-    h3 {
-      text-align: center;
-    }
+
     .lrn {
       margin-top: 5em;
       margin-bottom: 5em;
@@ -252,8 +209,77 @@ body { background-color: #eeeeee; }
         color: white;
         transition: 0.2s;
         &:hover{
-          color: var(--primary);
+          color: #c2c2c2;
         }
       }
     }
+  }
+
+  // MOBILE
+
+  @media only screen and (max-width: 988px) {
+
+    .container-01 {
+      text-align: center;
+      display: block;
+      padding: 15vh;
+      h1 {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 10px;
+      }
+    }
+
+    .abt-me-container {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 19px;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .kn-list {
+        h3 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .MyPojects {
+      padding: 3em 1em 3em 1em;
+      display: block;
+      .lrn {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .main-footer {
+      width: 100%;
+      .m-footer {
+       margin: 0;
+       padding: 0;
+       li{
+         margin: 10px;
+       }
+       a {
+        font-size: 15px;
+      }
+      }
+
+    }
+
   }

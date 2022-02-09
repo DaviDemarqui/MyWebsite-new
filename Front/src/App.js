@@ -15,6 +15,8 @@ import MainFooter from './components/MainFooter';
 import About from './components/About';
 import ProjectContainer from './components/ProjectContainer';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 library.add(
   fab,
   faFacebook,

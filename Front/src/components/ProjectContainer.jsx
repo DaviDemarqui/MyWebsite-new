@@ -1,41 +1,58 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table';
+// import Table from 'react-bootstrap/Table';
+import {Card, Button, CardGroup} from 'react-bootstrap';
+import logo from './project.png';
 
 
 const ProjectContainer = () => {
     return (
         <div className='MyPojects'>
             <h3>My Favorite Projects</h3>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                    <th>title</th>
-                    <th>Description</th>
-                    <th>Language</th>
-                    <th>Stars</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td><a href='https://github.com/DaviDemarqui/BOTTAS'>BOTTAS</a></td>
-                    <td>Discord bot</td>
-                    <td>Python</td>
-                    <td>1</td>
-                    </tr>
-                    <tr>
-                    <td><a href='https://github.com/DaviDemarqui/NetRunner'>NETRUNNER</a></td>
-                    <td>An retrowave cyberpunk game</td>
-                    <td>C#</td>
-                    <td>2</td>
-                    </tr>
-                    <tr>
-                    <td><a href='https://github.com/DaviDemarqui/MyWebsite-new'>THIS WEBSITE</a></td>
-                    <td>this is the website you are using now :D</td>
-                    <td>JavaScript/Java</td>
-                    <td>5</td>
-                    </tr>
-                </tbody>
-            </Table>
+            <div className="projects">
+            <CardGroup>
+            <Card className='card'>
+                <Card.Img variant="top" src={logo} />
+                <Card.Body>
+                <Card.Title>BOTTAS</Card.Title>
+                <Card.Text>
+                    Simple Discord Bot made in python using discord library.
+                </Card.Text>
+                </Card.Body>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/BOTTAS' target="_blank">Go to the repository</Button>
+            </Card>
+            <Card>
+                <Card.Img variant="top" src={logo} />
+                <Card.Body>
+                <Card.Title>facebook clone</Card.Title>
+                <Card.Text>
+                    Facebook clone made using ReactJS
+                </Card.Text>
+                </Card.Body>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/facebook-clone' target="_blank">Go to the repository</Button>
+            </Card>
+            <Card>
+                <Card.Img variant="top" src={logo} />
+                <Card.Body>
+                <Card.Title>TC Eletronic API</Card.Title>
+                <Card.Text>
+                    This is an API I'm building for TC Eeletronics  
+                </Card.Text>
+                </Card.Body>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/tc-api' target="_blank">Go to the repository</Button>
+            </Card>
+            <Card>
+                <Card.Img variant="top" src={logo} />
+                <Card.Body>
+                <Card.Title>NetRunner</Card.Title>
+                <Card.Text>
+                    This is a game i'm currently building when a have free time
+                </Card.Text>
+                </Card.Body>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/NetRunner' target="_blank">Go to the repository</Button>
+            </Card>
+            </CardGroup>
+
+            </div>
             <div className="lrn">
                 <div className="btn">
                     <ul>
