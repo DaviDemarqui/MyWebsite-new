@@ -20,7 +20,7 @@ const ProjectContainer = () => {
                     Simple Discord Bot made in python using discord library.
                 </Card.Text>
                 </Card.Body>
-                <Button variant="primary" href='https://github.com/DaviDemarqui/BOTTAS' target="_blank">Go to the repository</Button>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/BOTTAS' target="_blank" rel="noopener noreferrer">Go to the repository</Button>
             </Card>
             <Card>
                 <Card.Img variant="top" src={facebook} />
@@ -30,7 +30,7 @@ const ProjectContainer = () => {
                     Facebook clone made using ReactJS
                 </Card.Text>
                 </Card.Body>
-                <Button variant="primary" href='https://github.com/DaviDemarqui/facebook-clone' target="_blank">Go to the repository</Button>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/facebook-clone' target="_blank" rel="noopener noreferrer">Go to the repository</Button>
             </Card>
             <Card>
                 <Card.Img variant="top" src={logo} />
@@ -40,7 +40,7 @@ const ProjectContainer = () => {
                     This is an API I'm building for my brother company called TC Electronics  
                 </Card.Text>
                 </Card.Body>
-                <Button variant="primary" href='https://github.com/DaviDemarqui/tc-api' target="_blank">Go to the repository</Button>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/tc-api' target="_blank" rel="noopener noreferrer">Go to the repository</Button>
             </Card>
             <Card>
                 <Card.Img variant="top" src={logo} />
@@ -50,7 +50,7 @@ const ProjectContainer = () => {
                     This is a game i'm currently building when a have free time
                 </Card.Text>
                 </Card.Body>
-                <Button variant="primary" href='https://github.com/DaviDemarqui/NetRunner' target="_blank">Go to the repository</Button>
+                <Button variant="primary" href='https://github.com/DaviDemarqui/NetRunner' target="_blank" rel="noopener noreferrer">Go to the repository</Button>
             </Card>
             </CardGroup>
 
