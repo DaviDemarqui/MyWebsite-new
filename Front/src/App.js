@@ -10,7 +10,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-
 import MainFooter from './components/MainFooter';
 import About from './components/About';
 import ProjectContainer from './components/ProjectContainer';
@@ -30,13 +29,13 @@ library.add(
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Container01 />
       <About />
       <ProjectContainer />
       <MainFooter />
-    </div>
+    </>
   );
 }
 

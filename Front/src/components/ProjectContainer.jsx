@@ -9,7 +9,7 @@ import bottas from '../img/bottas.png';
 const ProjectContainer = () => {
     return (
         <div className='MyPojects'>
-            <h3>My Favorite Projects</h3>
+            <h3  id='projects'>My Favorite Projects</h3>
             <div className="projects">
             <CardGroup>
             <Card className='card'>

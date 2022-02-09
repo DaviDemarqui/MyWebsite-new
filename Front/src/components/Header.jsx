@@ -1,36 +1,26 @@
-import {Navbar, Nav, Container} from 'react-bootstrap';
+import React, { Component } from 'react';
+import {Link} from 'react-scroll';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-function Header() {
+export default class Header extends Component {
+    render(){
     return (
-        // <div className="Header" id="myhd">
-        //     <div className="menu-ul">
-        //         <ul>
-        //             <li><h1 className="hdr-logo">Demarqui.</h1></li>
-        //             <li><a href="?">Software</a></li>
-        //             <li><a href="?">Contact</a></li>
-        //             <li><a href="?">About Me</a></li>
-        //         </ul>
-        //     </div>  
-        // </div>
         <div className="Header">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">Demarqui</Navbar.Brand>
+            <Navbar.Brand style={{cursor:"pointer"}}><Link to="home" >Demarqui</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="#pricing">About-Me</Nav.Link>
-                <Nav.Link href="#pricing">Projects</Nav.Link>
+                <Nav.Link><Link to="about">About-Me</Link></Nav.Link>
+                <Nav.Link><Link to='projects'>Projects</Link></Nav.Link>
                 </Nav>
                 <Nav>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="contact"><Link to="contact">Contact</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Container>
             </Navbar>
         </div>
-        
-    )
+    )}
 }
-
-export default Header;
