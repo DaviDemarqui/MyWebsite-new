@@ -7,8 +7,7 @@
   --primary: #26db96;
   --text: rgb(51, 51, 51);
 }
-body { background-color: #eeeeee; }
-  
+
 .Header { 
   position: sticky;
   top: 0;
@@ -49,12 +48,12 @@ body { background-color: #eeeeee; }
     }
     .me {
       width: 499px;
-      height: 400px;
+      height: 440px;
       margin: 0;
       position: absolute;
       top: 0;
       margin-top: 13em;
-      margin-right: 12em;
+      margin-right: 10em;
       right: 0;
     }
   }
