@@ -8,21 +8,38 @@
   --text: rgb(51, 51, 51);
 }
 
+#nb {
+  background-color: white;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
 .Header { 
   position: sticky;
   top: 0;
+  padding: 0;
   z-index: 1000;
+  margin: 0;
+  .d-logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 .5em;
+  }
+  span {
+    font-weight: 600;
+  }
 }
   
   .container-01 {
+    // background-color: #0f1318;
     text-align: left;
-    margin-top: 1em;
-    padding: 30vh;
+    color: black;
+    background-color: white;
+    margin-top: 0;
+    padding: 19vh 20vh 15vh 20vh;
     font-family: -apple-system,
       BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
-
     .hello-C1 {
       // color: rgb(255, 68, 68);
       color: var(--text);
@@ -30,25 +47,23 @@
       font-family: monospace;
       margin: 0;
       cursor: default;
-      color: #0d6efd;
+      color: #610dfd;
       span{ animation: blinker .8s linear infinite; } 
       @keyframes blinker { 1% { opacity: 0; } }
     } h3 {
       font-size: 23px;
-      color: var(--text);
       span { font-family: Arial, Helvetica, sans-serif; z-index: auto; } 
     } h1 {
       font-weight: 700; 
       margin: 0;
       font-size: 3.6em;
-      color: var(--text);
     } h4 {
       font-size: 20px;
       margin: 0;
     }
     .me {
-      width: 499px;
-      height: 440px;
+      width: 440px;
+      height: 380px;
       margin: 0;
       position: absolute;
       top: 0;
@@ -56,16 +71,103 @@
       margin-right: 10em;
       right: 0;
     }
+
+    .arrow-down {
+      background-color: #1e2022;
+      color: white;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      border-radius: 100px;
+      text-align: center;
+      margin: 11em auto 0;
+      cursor: pointer;
+      border: 1px solid #1e2022;
+      transition: .3s;
+      font-size: 25px;
+      &:hover {
+        border: 1px solid #1e2022;
+        color: #201e22;
+        background-color: transparent;
+      }
+    }
   }
+
+  .lrn {
+    margin-top: 5em;
+    margin-bottom: 9em;
+    margin-left: 4.9em;
+    background-color: #0f1318;
+    padding: 1em;
+    border-radius: 20px;
+    color: rgb(81, 211, 81);
+    width: 91%;
+    h4{ 
+      font-size: 27px;
+      font-weight: 900; 
+      margin-left: 1em;
+      margin-top: 1.2em;
+      margin-bottom: .5em; 
+    font-family: monospace;
+  } 
+  span { 
+    animation: blinker .8s linear infinite; 
+  } 
+    @keyframes blinker {
+       1% { opacity: 0; } 
+      }
+    ul { margin-left: 2em; }
+    .btn{
+      padding: 0;
+      float: left;
+      margin: 0;
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 5px;
+        }
+      }
+      .close {
+        background-color: rgb(243, 57, 57);
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
+      }
+      .minimize {
+        background-color: rgb(255, 213, 23);
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
+      }
+      .expand {
+        background-color: rgb(57, 207, 57);
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
+      }
+    }
+    .venture-list {
+      display: inline-flex;
+      .l1 {
+        margin-left: 1em;
+        font-size: 20px;
+        word-spacing: 5px;
+      }
+    }
+  }
+
   .abt-me-container {
     text-align: center;
     // background-color: #212529;
-    background-color: #0f1318;
+    background-color: white;
     padding-top: 5em;
     padding-bottom: 5em;
     font-size: 26px;
     display: block;
-    color: white;
+    color: black;
     
     h2 {
       margin: 0;
@@ -95,98 +197,42 @@
         font-size: 20px; 
       }
     }
+
+    .w-xp {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      ul {
+        list-style: none;
+        text-align: center;
+        li {
+          margin: 1em;
+        }
+      }
+    }
   }
 
   .MyPojects {
-    padding-top: 3em;
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-bottom: 3em;
+    padding: 0 5em 3em 5em;
 
     h3 {
        text-align: center;
     }
 
     .projects {
-      // display: flex;
-      // position: relative;
-      // left: 17%;
-      // width: 90em;
-      // margin: 1em;
-      margin: 5em 5em 0 5em;
+      margin: 3em 5em 0 5em;
       .card {
         margin: 1em;
       }
     }
-
-    .lrn {
-      margin-top: 5em;
-      margin-bottom: 5em;
-      margin-left: 4.9em;
-      background-color: #0f1318;
-      padding: 1em;
-      border-radius: 20px;
-      color: rgb(81, 211, 81);
-      width: 91%;
-      h4{ 
-        font-size: 27px;
-        font-weight: 900; 
-        margin-left: 1em;
-        margin-top: 1.2em;
-        margin-bottom: .5em; 
-      font-family: monospace;
-    } span { animation: blinker .8s linear infinite; } 
-      @keyframes blinker { 1% { opacity: 0; } }
-      ul { margin-left: 2em; }
-      .btn{
-        padding: 0;
-        float: left;
-        margin: 0;
-        ul {
-          display: flex;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          li {
-            margin: 5px;
-          }
-        }
-        .close {
-          background-color: rgb(243, 57, 57);
-          width: 13px;
-          height: 13px;
-          border-radius: 10px;
-        }
-        .minimize {
-          background-color: rgb(255, 213, 23);
-          width: 13px;
-          height: 13px;
-          border-radius: 10px;
-        }
-        .expand {
-          background-color: rgb(57, 207, 57);
-          width: 13px;
-          height: 13px;
-          border-radius: 10px;
-        }
-      }
-      .venture-list {
-        display: inline-flex;
-        .l1 {
-          margin-left: 1em;
-          font-size: 20px;
-          word-spacing: 5px;
-        }
-      }
-    }
-  }
+  }  
 
   .main-footer {
-    background: #1e2022;
+    background: white;
     text-align: center;
+    border-top: 1px solid rgb(236, 236, 236);
     padding-bottom: .1em;
     p {
-      color: white;
       font-family: sans-serif;
       font-size: 12px;
       float: right;
@@ -215,10 +261,10 @@
       } 
       a {
         font-size: 27px;
-        color: white;
+        color: rgb(43, 43, 43);
         transition: 0.2s;
         &:hover{
-          color: #c2c2c2;
+          color: #000000;
         }
       }
     }
@@ -293,8 +339,8 @@
     }
 
   }
-  @media only screen and (max-width: 1668px) {
-    .me {
-      display: none;
-    }
-  }
+  // @media only screen and (max-width: 1668px) {
+  //   .me {
+  //     display: none;
+  //   }
+  // }
